@@ -32,8 +32,8 @@ pipeline {
                 withSonarQubeEnv('soanrserver') {
                     sh '''
                         $HOME_SONAR/bin/sonar-scanner \
-                        -Dsonar.projectKey=nodePoject \
-                        -Dsonar.projectName=NodeProject \
+                        -Dsonar.projectKey=jestPoject \
+                        -Dsonar.projectName=jestProject \
                         -Dsonar.sources=. \
                         -Dsonar.tests=. \
                         -Dsonar.test.inclusions=**/*.test.js \
